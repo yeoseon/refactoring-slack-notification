@@ -1,2 +1,6 @@
 # refactoring-slack-notification
-기존에 만들었던 slack notification 기능을 리팩토링한다. 
+회사에서 사이드 프로젝트로 [만들었던 slack notification 기능](https://finlab.bwg.co.kr/gitlab/archsil/finlabop/fos/-/merge_requests/21/diffs?tab=diffs)을 리팩토링한다.  
+
+해당 기능만 Springboot 프로젝트로 하나 더 만들어 JUnit환경을 조성해 수행한다.  
+
+
