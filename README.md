@@ -20,3 +20,7 @@
     - 메시지 객체를 Json으로 변환하여 제공하는 책임도 갖는다. 
 - SlackEnvironment : Slack 메시지 알림을 위한 환경 설정 객체
     - Properties에 있는 정보를 토대로 환경 설정 값을 가져온다. 
+
+# 참고 자료
+
+* [Sending messages using Incoming Webhooks](https://api.slack.com/messaging/webhooks)  
