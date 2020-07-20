@@ -10,8 +10,4 @@ public class SlackEnvironment {
     public String getTargetUrl() {
         return targetUrl;
     }
-
-    public void setTargetUrl(String targetUrl) {
-        this.targetUrl = targetUrl;
-    }
 }
