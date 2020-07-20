@@ -1,5 +1,6 @@
 package me.yeoseon.domain;
 
+import me.yeoseon.dj.domain.SlackEnvironment;
 import me.yeoseon.dj.domain.SlackNotifier;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -11,7 +12,7 @@ public class SlackNotifierTest {
     void notifyMessage() {
         String message = "안녕";
 
-        SlackNotifier slackNotifier = new SlackNotifier();
+        SlackNotifier slackNotifier = new SlackNotifier(new SlackEnvironment());
         slackNotifier.notifyMessage(message);
     }
 }
