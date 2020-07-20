@@ -14,7 +14,7 @@ public class SlackNotifier {
 
     public void notifyMessage(String message) {
         String targetUrl = slackEnvironment.getTargetUrl();
-        String request = "{\n\"text\": \"안녕\"\n}";
+        SlackMessage slackMessage = new SlackMessage(message);
 
         RestTemplate restTemplate = new RestTemplate();
         restTemplate.getMessageConverters().add(0, new StringHttpMessageConverter(Charset.forName("UTF-8")));
