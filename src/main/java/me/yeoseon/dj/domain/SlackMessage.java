@@ -1,5 +1,7 @@
 package me.yeoseon.dj.domain;
 
+import me.yeoseon.dj.dto.SlackMsgRequestDto;
+
 public class SlackMessage {
     private String message;
 
@@ -7,10 +9,9 @@ public class SlackMessage {
         this.message = message;
     }
 
-    public String getRequest() {
-    //TODO: String이 아닌 DTO 또는 일급 컬렉션 이용하도록 수정
-        String request = "{\n\"text\": \"안녕\"\n}";
-
+    public SlackMsgRequestDto getRequest() {
+        SlackMsgRequestDto request = new SlackMsgRequestDto();
+        //TODO: Environment 에서 가져오도록
         return request;
     }
 
