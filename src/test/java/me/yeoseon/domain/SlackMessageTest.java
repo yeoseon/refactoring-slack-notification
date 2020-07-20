@@ -15,6 +15,6 @@ public class SlackMessageTest {
         SlackMessage slackMessage = new SlackMessage(message);
 
         String expectedRequest = "{\n\"text\": \"안녕\"\n}";
-        assertThat(slackMessage.getMessage()).isEqual(expectedRequest);
+        assertThat(slackMessage.getRequest()).isEqualTo(expectedRequest);
     }
 }

@@ -18,6 +18,6 @@ public class SlackNotifier {
 
         RestTemplate restTemplate = new RestTemplate();
         restTemplate.getMessageConverters().add(0, new StringHttpMessageConverter(Charset.forName("UTF-8")));
-        restTemplate.postForEntity(targetUrl, request, String.class);
+        restTemplate.postForEntity(targetUrl, slackMessage.getRequest(), String.class);
     }
 }
