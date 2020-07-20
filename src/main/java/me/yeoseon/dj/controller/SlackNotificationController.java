@@ -9,7 +9,6 @@ public class SlackNotificationController {
 
     public static void play() {
         SlackEnvironment slackEnvironment = new SlackEnvironment(TARGET_URL);
-
         SlackNotifier slackNotifier = new SlackNotifier(slackEnvironment);
 
         slackNotifier.notifyMessage("안뇽안뇽");
