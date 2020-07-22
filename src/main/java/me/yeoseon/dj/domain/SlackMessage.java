@@ -16,14 +16,22 @@ import me.yeoseon.dj.dto.SlackAttachmentDto;
 public class SlackMessage {
 
 	private String channel;
-	private String text; // 오전/오후 음악 리스트 입니다
+	private String text; //
 	private List<SlackAttachmentDto> attachments;
-	private String username;
+	private String userName;
 	private String iconEmoji;
+
+	public SlackMessage() {
+		this.channel = Constants.CHANNEL;
+		this.userName = Constants.USER_NAME;
+		this.text = Constants.TEST_TEXT;
+		this.attachments = Constants.TEST_ATTATCHMENTS;
+		this.iconEmoji = Constants.ICON_EMOJI;
+	}
 
 	public SlackMessage(String channel, String userName, String text, List<SlackAttachmentDto> attachments, String iconEmoji) {
 		this.channel = channel;
-		this.username = userName;
+		this.userName = userName;
 		this.text = text;
 		this.attachments = attachments;
 		this.iconEmoji = iconEmoji;
