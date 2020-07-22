@@ -22,7 +22,7 @@ public class SlackMessage {
 		this.channel = Constants.CHANNEL;
 		this.userName = Constants.USER_NAME;
 		this.text = Constants.TEST_TEXT_MAIN;
-		this.attachments = Constants.TEST_ATTATCHMENTS;
+		this.attachments = Constants.TEST_ATTACHMENTS;
 		this.iconEmoji = Constants.ICON_EMOJI;
 	}
 

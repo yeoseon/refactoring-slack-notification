@@ -1,7 +1,7 @@
 package me.yeoseon.dj.domain;
+import me.yeoseon.dj.Constants;
 
 public class SlackAttachment {
-   // TODO: Attatchment 형식이 변경된다면? Key와 Field 형태로 개선해볼 수 있지 않을까?
     private String title; // title
     private String text; // 사연
     private String footer; // ~의 신청곡입니다. userNm
@@ -9,6 +9,25 @@ public class SlackAttachment {
 
     // Test용 생성자
     public SlackAttachment() {
-        this.title =
+        this.title = Constants.ATTACHMENT_TEST_TITLE1;
+        this.text = Constants.ATTACHMENT_TEST_TEXT;
+        this.footer = Constants.ATTACHMENT_TEST_FOOTER;
+        this.color = Constants.ATTACHMENT_BAR_COLOR_MAIN;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public void setFooter(String footer) {
+        this.footer = footer;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 }
