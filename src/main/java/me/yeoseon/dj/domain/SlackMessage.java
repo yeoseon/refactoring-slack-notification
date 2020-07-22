@@ -11,6 +11,8 @@ import me.yeoseon.dj.Constants;
  */
 public class SlackMessage {
 
+	public static final String JSON_PROCESSION_ERROR = "Json 변환 과정에 문제가 발생했습니다. 객체를 확인해주세요.";
+
 	private String channel;
 	private String text; //
 	private List<SlackAttachment> attachments;
@@ -34,10 +36,14 @@ public class SlackMessage {
 		this.iconEmoji = iconEmoji;
 	}
 
-	//TODO: JsonProcessionException 알맞은 예외 처리할 것
-	public String convertSlackMessageToJson() throws JsonProcessingException {
+	public String convertSlackMessageToJson() {
 		ObjectMapper objectMapper = new ObjectMapper();
 
-		return objectMapper.writeValueAsString(this);
+		try {
+			return objectMapper.writeValueAsString(this);
+		} catch (JsonProcessingException e) {
+			throw new IllegalArgumentException(JSON_PROCESSION_ERROR);
+		}
+
 	}
 }

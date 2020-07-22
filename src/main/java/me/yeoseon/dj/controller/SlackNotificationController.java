@@ -2,6 +2,7 @@ package me.yeoseon.dj.controller;
 
 import me.yeoseon.dj.Constants;
 import me.yeoseon.dj.domain.SlackEnvironment;
+import me.yeoseon.dj.domain.SlackMessage;
 import me.yeoseon.dj.domain.SlackNotifier;
 
 public class SlackNotificationController {
@@ -10,6 +11,7 @@ public class SlackNotificationController {
         SlackEnvironment slackEnvironment = new SlackEnvironment(Constants.TARGET_URL);
         SlackNotifier slackNotifier = new SlackNotifier(slackEnvironment);
 
-        slackNotifier.notifyMessage("안뇽안뇽");
+        SlackMessage slackMessage = new SlackMessage();
+        slackNotifier.notifyMessage(slackMessage.convertSlackMessageToJson());
     }
 }
