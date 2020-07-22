@@ -4,19 +4,12 @@ public class SlackEnvironment {
     private String targetUrl;
     private String channel;
 
-    public SlackEnvironment(String targetUrl) {
+    public SlackEnvironment(String targetUrl, String channel) {
         this.targetUrl = targetUrl;
+        this.channel = channel;
     }
 
     public String getTargetUrl() {
         return targetUrl;
-    }
-
-    public String getChannel() {
-        return channel;
-    }
-
-    public void setChannel(String channel) {
-        this.channel = channel;
     }
 }
