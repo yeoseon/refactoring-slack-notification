@@ -1,6 +1,5 @@
 package me.yeoseon.domain;
 
-import me.yeoseon.dj.domain.SlackMessage;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

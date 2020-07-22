@@ -14,10 +14,9 @@ public class SlackNotifier {
 
     public void notifyMessage(String message) {
         String targetUrl = slackEnvironment.getTargetUrl();
-        SlackMessage slackMessage = new SlackMessage(message);
 
         RestTemplate restTemplate = new RestTemplate();
         restTemplate.getMessageConverters().add(0, new StringHttpMessageConverter(Charset.forName("UTF-8")));
-        restTemplate.postForEntity(targetUrl, slackMessage.getRequest(), String.class);
+        restTemplate.postForEntity(targetUrl, message, String.class);
     }
 }

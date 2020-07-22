@@ -15,36 +15,4 @@ public class SlackAttachmentDto {
 	private String text; // 사연
 	private String footer; // ~의 신청곡입니다. userNm
 	private String color; // Bar color
-
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-	public String getText() {
-		return text;
-	}
-
-	public void setText(String text) {
-		this.text = text;
-	}
-
-	public String getFooter() {
-		return footer;
-	}
-
-	public void setFooter(String footer) {
-		this.footer = footer;
-	}
-
-	public String getColor() {
-		return color;
-	}
-
-	public void setColor(String color) {
-		this.color = color;
-	}
 }
