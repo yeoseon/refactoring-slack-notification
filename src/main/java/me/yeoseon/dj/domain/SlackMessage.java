@@ -4,6 +4,8 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -35,5 +37,11 @@ public class SlackMessage {
 		this.text = text;
 		this.attachments = attachments;
 		this.iconEmoji = iconEmoji;
+	}
+
+	public String convertSlackMessageToJson() throws JsonProcessingException {
+		ObjectMapper objectMapper = new ObjectMapper();
+
+		return objectMapper.writeValueAsString(this);
 	}
 }
