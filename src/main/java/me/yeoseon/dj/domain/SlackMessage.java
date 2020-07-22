@@ -39,6 +39,7 @@ public class SlackMessage {
 		this.iconEmoji = iconEmoji;
 	}
 
+	//TODO: JsonProcessionException 알맞은 예외 처리할 것
 	public String convertSlackMessageToJson() throws JsonProcessingException {
 		ObjectMapper objectMapper = new ObjectMapper();
 
