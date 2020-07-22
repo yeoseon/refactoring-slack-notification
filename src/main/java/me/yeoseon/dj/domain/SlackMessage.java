@@ -13,19 +13,20 @@ public class SlackMessage {
 
 	private String channel;
 	private String text; //
-	private List<SlackAttachmentDto> attachments;
+	private List<SlackAttachment> attachments;
 	private String userName;
 	private String iconEmoji;
 
+	// Test용 생성자
 	public SlackMessage() {
 		this.channel = Constants.CHANNEL;
 		this.userName = Constants.USER_NAME;
-		this.text = Constants.TEST_TEXT;
+		this.text = Constants.TEST_TEXT_MAIN;
 		this.attachments = Constants.TEST_ATTATCHMENTS;
 		this.iconEmoji = Constants.ICON_EMOJI;
 	}
 
-	public SlackMessage(String channel, String userName, String text, List<SlackAttachmentDto> attachments, String iconEmoji) {
+	public SlackMessage(String channel, String userName, String text, List<SlackAttachment> attachments, String iconEmoji) {
 		this.channel = channel;
 		this.userName = userName;
 		this.text = text;
