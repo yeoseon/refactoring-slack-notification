@@ -1,0 +1,20 @@
+{
+  "channel": "webhook",
+  "username": "DJ Celine",
+  "iconEmoji": ":musical_note:",
+  "text": "*DJ Celine이 전해드리는 오늘의 음악 :musical_note:*",
+  "attachments": [
+    {
+      "title": "이승철 - 오늘도 난",
+      "text": ":pencil: 우리아빠가 좋아하는 노래에요",
+      "footer": "윤여선 님의 신청곡입니다.",
+      "color": "#BCBABE"
+    },
+    {
+      "title": "김동률 - 같이 걸을까",
+      "text": ":star: TOP 10 :star:",
+      "footer": "TOP 10에 선정된 곡입니다.",
+      "color": "#A1D6E2"
+    }
+  ]
+}

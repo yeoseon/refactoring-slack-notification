@@ -42,6 +42,7 @@ public class SlackMessage {
 		try {
 			return objectMapper.writeValueAsString(this);
 		} catch (JsonProcessingException e) {
+			System.out.println(e.getStackTrace());
 			throw new IllegalArgumentException(JSON_PROCESSION_ERROR);
 		}
 
