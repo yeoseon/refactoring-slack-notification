@@ -1,7 +1,5 @@
 package me.yeoseon.dj;
 
-import me.yeoseon.dj.dto.SlackAttachmentDto;
-
 import java.util.ArrayList;
 import java.util.List;
 

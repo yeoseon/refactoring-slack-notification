@@ -2,15 +2,9 @@ package me.yeoseon.dj.domain;
 
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 import me.yeoseon.dj.Constants;
-import me.yeoseon.dj.dto.SlackAttachmentDto;
 
 /**
  * Slack에 메시지 전송 요청을 위한 Json Message 객체
