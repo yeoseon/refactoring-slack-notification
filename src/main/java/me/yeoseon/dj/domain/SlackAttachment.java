@@ -1,10 +1,15 @@
 package me.yeoseon.dj.domain;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import me.yeoseon.dj.Constants;
 
 public class SlackAttachment {
+    @JsonProperty
     private String title; // title
+    @JsonProperty
     private String text; // 사연
+    @JsonProperty
     private String footer; // ~의 신청곡입니다. userNm
+    @JsonProperty
     private String color; // Bar color
 
     // Test용 생성자

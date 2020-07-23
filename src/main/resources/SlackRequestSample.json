@@ -1,7 +1,7 @@
 {
   "channel": "webhook",
   "username": "DJ Celine",
-  "iconEmoji": ":musical_note:",
+  "icon_emoji": ":musical_note:",
   "text": "*DJ Celine이 전해드리는 오늘의 음악 :musical_note:*",
   "attachments": [
     {

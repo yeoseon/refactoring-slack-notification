@@ -2,6 +2,7 @@ package me.yeoseon.dj.domain;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import me.yeoseon.dj.Constants;
@@ -13,11 +14,11 @@ public class SlackMessage {
 
 	public static final String JSON_PROCESSION_ERROR = "Json 변환 과정에 문제가 발생했습니다. 객체를 확인해주세요.";
 
-	private String channel;
-	private String text; //
-	private List<SlackAttachment> attachments;
-	private String userName;
-	private String iconEmoji;
+	@JsonProperty private String channel;
+	@JsonProperty private String text; //
+	@JsonProperty private List<SlackAttachment> attachments;
+	@JsonProperty("username") private String userName;
+	@JsonProperty("icon_emoji") private String iconEmoji;
 
 	// Test용 생성자
 	public SlackMessage() {
