@@ -21,3 +21,5 @@
 # 참고 자료
 
 * [Sending messages using Incoming Webhooks](https://api.slack.com/messaging/webhooks)  
+
+https://finlab.bwg.co.kr/gitlab/archsil/finlabop/fos/-/merge_requests/78 반영 완료
