@@ -22,4 +22,4 @@
 
 * [Sending messages using Incoming Webhooks](https://api.slack.com/messaging/webhooks)  
 
-https://finlab.bwg.co.kr/gitlab/archsil/finlabop/fos/-/merge_requests/78 반영 완료
+[slack notification 기능(private)] 반영 완료
