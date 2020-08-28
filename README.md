@@ -27,3 +27,23 @@
 # 추가 리팩토링
 
 1. SlackAttachments 로 List<SlackAttachment>를 Wrapping 해서 생성자로 처리하기 
+```
+package ...
+
+import ....PlayDto;
+
+import java.util.List;
+
+public class SlackAttachments {
+    private List<SlackAttachment> slackAttachments;
+
+    public SlackAttachments(List<PlayDto> playList) {
+        int playItemNumber = 0;
+        for(PlayDto playItem : playList) {
+            this.slackAttachments.add(new SlackAttachment(playItem, playItemNumber));
+            playItemNumber++;
+        }
+    }
+}
+
+```
