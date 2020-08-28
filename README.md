@@ -23,3 +23,7 @@
 * [Sending messages using Incoming Webhooks](https://api.slack.com/messaging/webhooks)  
 
 [slack notification 기능(private)] 반영 완료
+
+# 추가 리팩토링
+
+1. SlackAttachments 로 List<SlackAttachment>를 Wrapping 해서 생성자로 처리하기 
